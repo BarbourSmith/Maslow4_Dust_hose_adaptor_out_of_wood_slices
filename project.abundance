@@ -93,8 +93,8 @@
     },
     {
       "atomType": "CutLayout",
-      "x": 0.906688241639698,
-      "y": 0.46420323325635104,
+      "x": 0.8872707659115426,
+      "y": 0.4295612009237875,
       "uniqueID": "id-1211",
       "name": "Cut Layout",
       "ioValues": [
@@ -183,6 +183,14 @@
       "partName": "Maslow4_Dust_hose_adaptor_out_of_wood_slices._"
     },
     {
+      "atomType": "Constant",
+      "x": 0.4120819848975189,
+      "y": 0.8845265588914549,
+      "uniqueID": "id-1939",
+      "name": "GroupOfTen",
+      "value": 1
+    },
+    {
       "atomType": "Molecule",
       "x": 0.1645091693635383,
       "y": 0.15242494226327943,
@@ -219,7 +227,7 @@
         {
           "atomType": "Input",
           "x": 0.01815,
-          "y": 0.17782909930715934,
+          "y": 0.10999999999999999,
           "uniqueID": "id-840",
           "name": "Cutting_shape",
           "type": "geometry"
@@ -227,14 +235,14 @@
         {
           "atomType": "Input",
           "x": 0.01815,
-          "y": 0.2586605080831409,
+          "y": 0.176,
           "uniqueID": "id-843",
           "name": "Woodthick"
         },
         {
           "atomType": "Input",
           "x": 0.01815,
-          "y": 0.3325635103926097,
+          "y": 0.242,
           "uniqueID": "id-846",
           "name": "Layer"
         },
@@ -263,6 +271,10 @@
             {
               "name": "geometry",
               "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 3.175
             }
           ]
         },
@@ -276,6 +288,10 @@
             {
               "name": "z",
               "ioValue": 1
+            },
+            {
+              "name": "w",
+              "ioValue": 3.175
             }
           ],
           "currentEquation": "(z-1)*w"
@@ -296,6 +312,10 @@
             },
             {
               "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
               "ioValue": 0
             }
           ]
@@ -485,6 +505,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 1
             }
           ]
         },
@@ -668,6 +692,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 2
             }
           ]
         },
@@ -851,6 +879,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 3
             }
           ]
         },
@@ -1034,6 +1066,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 4
             }
           ]
         },
@@ -1217,6 +1253,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 5
             }
           ]
         },
@@ -1400,6 +1440,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 6
             }
           ]
         },
@@ -1583,6 +1627,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 7
             }
           ]
         },
@@ -1766,6 +1814,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 8
             }
           ]
         },
@@ -1949,6 +2001,10 @@
             {
               "name": "yDist",
               "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 9
             }
           ]
         },
@@ -2094,6 +2150,168 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.10999999999999999,
+          "uniqueID": "id-1898",
+          "name": "WoodThick"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.176,
+          "uniqueID": "id-1901",
+          "name": "ObjectToCut",
+          "type": "geometry"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.242,
+          "uniqueID": "id-1904",
+          "name": "GroupOfTen"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.1871628910463862,
+          "y": 0.19861431870669746,
+          "uniqueID": "id-1907",
+          "name": "10*n+1",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+1"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.18932038834951456,
+          "y": 0.3117782909930716,
+          "uniqueID": "id-1912",
+          "name": "10*n+2",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+2"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.18338727076591155,
+          "y": 0.4457274826789838,
+          "uniqueID": "id-1915",
+          "name": "10*n+3",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+3"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.18985976267529667,
+          "y": 0.5912240184757506,
+          "uniqueID": "id-1918",
+          "name": "10*n+4",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+4"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.19579288025889965,
+          "y": 0.7251732101616628,
+          "uniqueID": "id-1921",
+          "name": "10*n+5",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+5"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.33603020496224384,
+          "y": 0.3325635103926097,
+          "uniqueID": "id-1924",
+          "name": "10*n+6",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+6"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.3344120819848975,
+          "y": 0.4503464203233256,
+          "uniqueID": "id-1927",
+          "name": "10*n+7",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+7"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.3333333333333333,
+          "y": 0.584295612009238,
+          "uniqueID": "id-1930",
+          "name": "10*n+8",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+8"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.3354908306364617,
+          "y": 0.6997690531177828,
+          "uniqueID": "id-1933",
+          "name": "10*n+9",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+9"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.3365695792880259,
+          "y": 0.8452655889145496,
+          "uniqueID": "id-1936",
+          "name": "10*n+10",
+          "ioValues": [
+            {
+              "name": "n",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "10*n+10"
         },
         {
           "atomType": "Molecule",
@@ -3973,168 +4191,6 @@
             }
           ],
           "fileTypeVersion": 1
-        },
-        {
-          "atomType": "Input",
-          "x": 0.01815,
-          "y": 0.18475750577367206,
-          "uniqueID": "id-1898",
-          "name": "WoodThick"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.01815,
-          "y": 0.25075750577367206,
-          "uniqueID": "id-1901",
-          "name": "ObjectToCut",
-          "type": "geometry"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.01815,
-          "y": 0.31675750577367207,
-          "uniqueID": "id-1904",
-          "name": "GroupOfTen"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.1871628910463862,
-          "y": 0.19861431870669746,
-          "uniqueID": "id-1907",
-          "name": "10*n+1",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+1"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.18932038834951456,
-          "y": 0.3117782909930716,
-          "uniqueID": "id-1912",
-          "name": "10*n+2",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+2"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.18338727076591155,
-          "y": 0.4457274826789838,
-          "uniqueID": "id-1915",
-          "name": "10*n+3",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+3"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.18985976267529667,
-          "y": 0.5912240184757506,
-          "uniqueID": "id-1918",
-          "name": "10*n+4",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+4"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.19579288025889965,
-          "y": 0.7251732101616628,
-          "uniqueID": "id-1921",
-          "name": "10*n+5",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+5"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.33603020496224384,
-          "y": 0.3325635103926097,
-          "uniqueID": "id-1924",
-          "name": "10*n+6",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+6"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.3344120819848975,
-          "y": 0.4503464203233256,
-          "uniqueID": "id-1927",
-          "name": "10*n+7",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+7"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.3333333333333333,
-          "y": 0.584295612009238,
-          "uniqueID": "id-1930",
-          "name": "10*n+8",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+8"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.3354908306364617,
-          "y": 0.6997690531177828,
-          "uniqueID": "id-1933",
-          "name": "10*n+9",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+9"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.3365695792880259,
-          "y": 0.8452655889145496,
-          "uniqueID": "id-1936",
-          "name": "10*n+10",
-          "ioValues": [
-            {
-              "name": "n",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "10*n+10"
         }
       ],
       "allConnectors": [
@@ -4142,56 +4198,6 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-1525",
           "ap2ID": "id-1523"
-        },
-        {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-1526",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 2",
-          "ap1ID": "id-1536",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 3",
-          "ap1ID": "id-1546",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 4",
-          "ap1ID": "id-1556",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 5",
-          "ap1ID": "id-1566",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 6",
-          "ap1ID": "id-1576",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 7",
-          "ap1ID": "id-1586",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 8",
-          "ap1ID": "id-1596",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 9",
-          "ap1ID": "id-1606",
-          "ap2ID": "id-1525"
-        },
-        {
-          "ap2Name": "Shape 10",
-          "ap1ID": "id-1616",
-          "ap2ID": "id-1525"
         },
         {
           "ap2Name": "Woodthick",
@@ -4392,17 +4398,59 @@
           "ap2Name": "Layer",
           "ap1ID": "id-1936",
           "ap2ID": "id-1616"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-1526",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-1536",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-1546",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-1556",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 5",
+          "ap1ID": "id-1566",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 6",
+          "ap1ID": "id-1576",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 7",
+          "ap1ID": "id-1586",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 8",
+          "ap1ID": "id-1596",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 9",
+          "ap1ID": "id-1606",
+          "ap2ID": "id-1525"
+        },
+        {
+          "ap2Name": "Shape 10",
+          "ap1ID": "id-1616",
+          "ap2ID": "id-1525"
         }
       ],
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Constant",
-      "x": 0.4120819848975189,
-      "y": 0.8845265588914549,
-      "uniqueID": "id-1939",
-      "name": "GroupOfTen",
-      "value": 1
     }
   ],
   "allConnectors": [
@@ -4537,6 +4585,11 @@
       "ap2ID": "id-1225"
     },
     {
+      "ap2Name": "GroupOfTen",
+      "ap1ID": "id-1939",
+      "ap2ID": "id-1521"
+    },
+    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-836",
       "ap2ID": "id-1208"
@@ -4585,11 +4638,6 @@
       "ap2Name": "Shape 10",
       "ap1ID": "id-1172",
       "ap2ID": "id-1208"
-    },
-    {
-      "ap2Name": "GroupOfTen",
-      "ap1ID": "id-1939",
-      "ap2ID": "id-1521"
     }
   ],
   "unitsKey": "MM",
